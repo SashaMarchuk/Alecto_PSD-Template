@@ -39,6 +39,7 @@ p {
     max-width: 30px;
     height: 1px;
     background: $mainColorElements;
+    margin: 40px 0;
 }
 .listElementsByCircle{
     display: $flex;
@@ -57,7 +58,7 @@ p {
         }
     }
 }
-.titleText{
+.title__Text{
     font-size: 60px;
     color:#576671;
     font-weight: initial;
@@ -262,8 +263,8 @@ p {
 
                 width: 100%;
                 max-width: 183px;
-                height: 100%;
-                max-height: 183px;
+                height: 183px;
+                min-height: 183px;
                 background: #EDEFF1;
                 align-items: center;
                 &:hover{
@@ -390,6 +391,67 @@ p {
     }
 }
 
+// OurServices
 
+.ourServices{
+    background: #F9F9FA;
+    height: 100%;
+    // margin: 100px 0;
+    padding: 100px 0;
+
+    .ourServices__text{
+       @include flex-col;
+       align-items: center;
+
+    //    justify-content: center;
+    }
+    .ourServices__allItem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 40px 0;
+        .ourServices__item{
+            padding: 30px 0;
+            display: flex;
+            // justify-items: center;
+            // justify-items: end;
+            width: 550px;            
+            .ourServices__item__icon{
+                background: #FFFFFF;
+                min-height: 60px;
+                height: 60px;
+                min-width: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+            }
+            .ourServices__item__text{
+                @include flex-col;
+                .titleText{
+                    display: flex;
+                    // justify-items: center;
+                    align-self: end;
+                    .ourServices__item__description{
+
+                    }
+                }
+            }
+        }
+
+    }
+   
+}
+
+//Team
+.team{
+    height: 100vh;
+}
+
+//Pricing
+.pricing{
+    height: 100vh;
+}
 
 

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #17daa3;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Branding" class="cls-1" d="M326,5003H306a2,2,0,0,0-2,2v6h-6a2,2,0,0,0-2,2v20a2,2,0,0,0,2,2h20a2,2,0,0,0,2-2v-6h6a2,2,0,0,0,2-2v-20A2,2,0,0,0,326,5003Zm-9,29H299v-18h5v11a2,2,0,0,0,2,2h11v5Zm8-8H307v-18h18v18Z" transform="translate(-296 -5003)"/>
+</svg>
