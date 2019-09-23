@@ -11,65 +11,109 @@
 </head>
 
 <body>
-    <!-- <div class="firstSection"> -->
-    <header class="header">
-        <div class="header__inner container">
-            <div class="header__logo">
-                <img src="icons/logo_alecto.png" alt="Alecto">
-            </div>
-            <nav class="nav">
-                <a href="#Home" class="nav__link">Home</a>
-                <a href="#About" class="nav__link">About</a>
-                <a href="#Work" class="nav__link">Work</a>
-                <a href="#Services" class="nav__link">Services</a>
-                <a href="#Blog" class="nav__link">Blog</a>
-                <a href="" class="nav__link"><img class="invert" src="./icons/search_icon.png" alt=""></a>
-            </nav>
-        </div>
-    </header>
-    <div class="intro">
-        <div class="intro__inner container">
-            <div class="intro__title">Alecto is simple PSD Template</div>
-            <div class="arrow container">
+    <svg style="display: none;">
+        <symbol id="Rocket" viewBox="0 0 72 53">
+            <g>
+                <path
+                    d="M1225.73,1562.97l-8.47-19.08a3.176,3.176,0,0,0-6,.58l-8.37,36.86-11.01-26.76a3.176,3.176,0,0,0-5.86-.04l-10.01,23.37-5.4-10.82a3.182,3.182,0,0,0-2.84-1.76,3.143,3.143,0,0,0-2.44,1.14l-10.59,12.72a3.177,3.177,0,1,0,4.88,4.07l7.48-8.98,6.29,12.61a3.18,3.18,0,0,0,5.77-.17l9.72-22.72,11.95,29.04a3.173,3.173,0,0,0,6.03-.5l8.47-37.31,4.59,10.33a3.176,3.176,0,0,0,6.08-1.29A3.236,3.236,0,0,0,1225.73,1562.97Z"
+                    transform="translate(-1154 -1542)" />
+            </g>
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="Atom" viewBox="0 0 47 53">
+            <g>
+                <path
+                    d="M834.189,1582.5c-1.367,2.35-4.18,3.55-8.063,3.55a25.616,25.616,0,0,1-5.1-.58c-2.126,6.73-5.531,10.54-9.529,10.54s-7.4-3.81-9.527-10.53a26.026,26.026,0,0,1-5.193.58c-3.846,0-6.588-1.18-7.967-3.56-1.926-3.31-.39-7.98,4.2-13-4.583-5.02-6.121-9.69-4.2-13.01,1.906-3.27,6.642-4.31,13.158-2.96,2.128-6.73,5.532-10.54,9.53-10.54s7.4,3.81,9.529,10.54a24.667,24.667,0,0,1,5.578-.59c3.643,0.07,6.251,1.27,7.58,3.55,1.926,3.32.39,7.99-4.2,13.01C834.576,1574.52,836.113,1579.18,834.189,1582.5Zm-28-.6c1.649,6.66,4.134,9.14,5.312,9.14,1.036,0,3.08-1.92,4.68-6.9a54.609,54.609,0,0,1-5.762-2.33c-1.6-.75-3.175-1.57-4.676-2.43a0.255,0.255,0,0,0-.071-0.04C805.832,1580.2,805.984,1581.08,806.188,1581.9Zm-13-1.87c0.472,0.82,2.928,1.56,7.616.61a54.528,54.528,0,0,1-.861-6.12c-0.118-1.5-.177-3.05-0.186-4.6-0.52.45-1.025,0.9-1.5,1.36C793.508,1575.84,792.626,1579.07,793.185,1580.03Zm9.873-21.14c-6.173-1.71-9.33-.86-9.876.08-0.485.83,0.128,3.39,3.434,7.06,1.341-1.15,2.8-2.29,4.379-3.4,1.517-1.05,3.065-2.04,4.606-2.93C804.739,1559.4,803.886,1559.12,803.058,1558.89Zm13.755-1.8c-1.649-6.65-4.134-9.13-5.313-9.13-1.036,0-3.08,1.92-4.68,6.9a52.387,52.387,0,0,1,5.762,2.33c1.6,0.75,3.175,1.57,4.677,2.43,0.023,0.01.048,0.03,0.07,0.04C817.169,1558.79,817.016,1557.92,816.813,1557.09Zm1.27,8.93c-1.116-.75-2.239-1.46-3.358-2.11-1.04-.59-2.126-1.16-3.225-1.7-1.1.54-2.185,1.11-3.224,1.7-1.12.65-2.243,1.36-3.359,2.11-0.067,1.15-.134,2.3-0.134,3.48s0.067,2.33.134,3.48c1.116,0.75,2.239,1.46,3.359,2.1,1.041,0.6,2.126,1.17,3.224,1.71,1.1-.54,2.185-1.11,3.225-1.71,1.119-.64,2.242-1.35,3.358-2.1,0.068-1.15.135-2.3,0.135-3.48S818.151,1567.17,818.083,1566.02Zm-0.681,13.27c0.862,0.31,1.712.58,2.54,0.81,6.17,1.72,9.329.87,9.877-.07,0.485-.84-0.13-3.4-3.433-7.06-1.342,1.15-2.8,2.29-4.38,3.4C820.49,1577.42,818.941,1578.4,817.4,1579.29Zm12.413-20.33c-0.475-.81-2.929-1.55-7.616-0.61a54.72,54.72,0,0,1,.861,6.12c0.118,1.51.177,3.05,0.187,4.61,0.52-.45,1.025-0.91,1.5-1.36C829.493,1563.16,830.374,1559.93,829.815,1558.96ZM811.5,1572.81a3.315,3.315,0,1,1,3.359-3.31A3.334,3.334,0,0,1,811.5,1572.81Z"
+                    transform="translate(-788 -1543)" />
+            </g>
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="Activity" viewBox="0 0 72 53">
+            <g>
+                <path
+                    d="M1225.73,1562.97l-8.47-19.08a3.176,3.176,0,0,0-6,.58l-8.37,36.86-11.01-26.76a3.176,3.176,0,0,0-5.86-.04l-10.01,23.37-5.4-10.82a3.182,3.182,0,0,0-2.84-1.76,3.143,3.143,0,0,0-2.44,1.14l-10.59,12.72a3.177,3.177,0,1,0,4.88,4.07l7.48-8.98,6.29,12.61a3.18,3.18,0,0,0,5.77-.17l9.72-22.72,11.95,29.04a3.173,3.173,0,0,0,6.03-.5l8.47-37.31,4.59,10.33a3.176,3.176,0,0,0,6.08-1.29A3.236,3.236,0,0,0,1225.73,1562.97Z"
+                    transform="translate(-1154 -1542)" />
+            </g>
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="Graduation_Cap" viewBox="0 0 72 53">
+            <g>
+                <path
+                    d="M1594.97,1558.25l-29.33-14.86a3.643,3.643,0,0,0-3.28,0l-29.33,14.86a3.738,3.738,0,0,0,0,6.65l1.64,0.83v13.07a3.67,3.67,0,1,0,3.66,0v-11.22l5.5,2.79V1582c0,7.18,9.03,13,20.17,13s20.17-5.82,20.17-13v-11.63l10.8-5.47A3.738,3.738,0,0,0,1594.97,1558.25Zm-16.3,23.75c0,3.43-6.41,7.43-14.67,7.43s-14.67-4-14.67-7.43v-8.85l13.03,6.6a3.643,3.643,0,0,0,3.28,0l13.03-6.6V1582Zm-14.67-7.65-25.24-12.78,25.24-12.78,25.24,12.78Z"
+                    transform="translate(-1531 -1543)" />
+            </g>
+        </symbol>
+    </svg>
+    <div class="startPage">
+        <div class="container">
+            <!-- <div class="arrow">
                 <div class="arrow__left">
                     <img src="./icons/left_arrow.png" alt="">
                 </div>
                 <div class="arrow__right">
                     <img src="./icons/right_arrow.png" alt="">
                 </div>
+            </div> -->
+
+            <header class="header">
+                <div class="logo">
+                    <img class="logo-atr" src="icons/logo_alecto.png" alt="Alecto">
+                </div>
+                <nav class="nav">
+                    <nav class="nav">
+                        <a href="#Home" class="nav__link">Home</a>
+                        <a href="#About" class="nav__link">About</a>
+                        <a href="#Work" class="nav__link">Work</a>
+                        <a href="#Services" class="nav__link">Services</a>
+                        <a href="#Blog" class="nav__link">Blog</a>
+                        <a href="" class="nav__link"><img class="invert" src="./icons/search_icon.png" alt=""></a>
+                    </nav>
+                </nav>
+            </header>
+            <div class="startPage__text">
+                <div class="title__startPage"><span>Alecto</span> is simple PSD Template</div>
+                <div class="arrow">
+                    <div class="arrow__left">
+                        <img class="arrow__left-atr" src="./icons/left_arrow.png" alt="">
+                    </div>
+                    <div class="arrow__right">
+                        <img class="arrow__right-atr" src="./icons/right_arrow.png" alt="">
+                    </div>
+                </div>
+                <div class="subtitle__startPage">Nam varius accumsan elementum aliquam</div>
+            </div>
+            <div class="startPage__btn">
+                <button class="btn__intro">Learn More</button>
             </div>
 
-            <div class="intro__subtitle">Nam varius accumsan elementum aliquam</div>
-        </div>
-        <div class="btnLearnMore">
-            <span>Learn More</span>
-        </div>
-
-
-        <div class="listElementsByCircle">
-            <div class="listElementsByCircle__circle"></div>
-            <div class="listElementsByCircle__circle"></div>
-            <div class="listElementsByCircle__circle"></div>
-            <div class="listElementsByCircle__circle"></div>
-            <div class="listElementsByCircle__circle"></div>
-        </div>
-        <div class="container">
+            <div class="listElementsByCircle">
+                <div class="listElementsByCircle__circle"></div>
+                <div class="listElementsByCircle__circle"></div>
+                <div class="listElementsByCircle__circle"></div>
+                <div class="listElementsByCircle__circle"></div>
+                <div class="listElementsByCircle__circle"></div>
+            </div>
             <div class="downArrow">
                 <img src="./icons/down_arrow.png" alt="">
             </div>
-        </div>
-    </div>
+        </div><!-- container -->
+    </div><!-- startPage  -->
     <div class="aboutUs container">
-        <div class="aboutUs__text">
-            <h1 class="title__Text">About us</h1>
+        <div class="text">
+            <div class="title__Text">About us</div>
             <div class="line"></div>
-            <p class="aboutUs__subtitle">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
+            <p class="subtitle__Text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
                 scelerisque.</p>
         </div>
         <div class="aboutUs__allItems">
             <div class="aboutUs__item">
                 <div class="aboutUs__item__icon">
-                    <img class="aboutUsIcon" src="./icons/aboutUsIcon1.png" alt="">
+                    <svg class="aboutUsIcon">
+                        <use xlink:href="#Rocket"></use>
+                    </svg>
                 </div>
                 <h1 class="aboutUs__item__title">Lorem ipsum</h1>
                 <p class="aboutUs__item__subtitle">Nam varius accumsan elementum. Aliquam fermentum eros in suscip copy
@@ -77,7 +121,9 @@
             </div>
             <div class="aboutUs__item">
                 <div class="aboutUs__item__icon">
-                    <img class="aboutUsIcon" src="./icons/aboutUsIcon2.png" alt="">
+                    <svg class="aboutUsIcon">
+                        <use xlink:href="#Atom"></use>
+                    </svg>
                 </div>
                 <h1 class="aboutUs__item__title">Lorem ipsum</h1>
                 <p class="aboutUs__item__subtitle">Nam varius accumsan elementum. Aliquam fermentum eros in suscip copy
@@ -85,7 +131,9 @@
             </div>
             <div class="aboutUs__item">
                 <div class="aboutUs__item__icon">
-                    <img class="aboutUsIcon" src="./icons/aboutUsIcon3.png" alt="">
+                    <svg class="aboutUsIcon">
+                        <use xlink:href="#Activity"></use>
+                    </svg>
                 </div>
                 <h1 class="aboutUs__item__title">Lorem ipsum</h1>
                 <p class="aboutUs__item__subtitle">Nam varius accumsan elementum. Aliquam fermentum eros in suscip copy
@@ -93,7 +141,9 @@
             </div>
             <div class="aboutUs__item">
                 <div class="aboutUs__item__icon">
-                    <img class="aboutUsIcon" src="./icons/aboutUsIcon4.png" alt="">
+                    <svg class="aboutUsIcon">
+                        <use xlink:href="#Graduation_Cap"></use>
+                    </svg>
                 </div>
                 <h1 class="aboutUs__item__title">Lorem ipsum</h1>
                 <p class="aboutUs__item__subtitle">Nam varius accumsan elementum. Aliquam fermentum eros in suscip copy
@@ -101,15 +151,16 @@
             </div>
         </div>
         <div class="aboutUs__LearnMore">
-            <div class="btnLearnMore">Learn more</div>
+            <div class="btn">Learn more</div>
         </div>
     </div>
+
     <div class="photo ">
-        <div class="container">
-            <div class="photo__inner">
-                <article class="article">
+        <!-- <div class="container"> -->
+            <div class="photo__inner container">
+                <article class="photo__article">
                     <h1 class="title__Text">Lorem ispum</h1>
-                    <section class="section">
+                    <section class="photo__section">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
                         porttitor,
                         ac blandit nisl
@@ -117,14 +168,14 @@
                         accumsan. Quisque metus
                         purus, iaculis id tincidunt non, blandit quis sapien.
                     </section>
-                    <div class="btnLearnMore">Learn More</div>
+                    <div class="btn">Learn More</div>
                 </article>
-                <aside class="aside"></aside>
+                <aside class="photo__aside"></aside>
             </div>
-            <div class="photo__inner">
-                <article class="article">
+            <div class="photo__inner container">
+                <article class="photo__article">
                     <h1 class="title__Text">Dolor sit amet</h1>
-                    <section class="section">
+                    <section class="photo__section">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
                         porttitor,
                         ac blandit nisl
@@ -132,11 +183,11 @@
                         accumsan. Quisque metus
                         purus, iaculis id tincidunt non, blandit quis sapien.
                     </section>
-                    <div class="btnLearnMore">Learn More</div>
+                    <div class="btn">Learn More</div>
                 </article>
-                <aside class="aside"></aside>
+                <aside class="photo__aside"></aside>
             </div> <!-- photo__inner -->
-        </div> <!-- container -->
+        <!-- </div> container -->
     </div> <!-- photo -->
 
 
@@ -157,10 +208,10 @@
 
     <div class="ourServices ">
         <div class="container">
-            <div class="ourServices__text">
+            <div class="text">
                 <h1 class="title__Text">Our Services</h1>
                 <div class="line"></div>
-                <p class="ourServices__subtitle">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
+                <p class="subtitle__Text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
                     scelerisque.</p>
             </div>
 
@@ -168,7 +219,7 @@
                 <div class="ourServices__item">
                     <div class="ourServices__item__icon"><img src="./icons/ourServicesPortfolioIcon.svg"></div>
                     <div class="ourServices__item__text">
-                        <div class="title__Text">Portfolio
+                        <div class="ourServices__item__title">Portfolio
 
                         </div>
                         <div class="ourServices__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -179,7 +230,7 @@
                 <div class="ourServices__item">
                     <div class="ourServices__item__icon"><img src="./icons/ourServicesDesignIcon.svg"></div>
                     <div class="ourServices__item__text">
-                        <div class="title__Text">Design
+                        <div class="ourServices__item__title">Design
 
                         </div>
                         <div class="ourServices__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -189,25 +240,20 @@
                 <div class="ourServices__item">
                     <div class="ourServices__item__icon"><img src="./icons/ourServicesBrandingIcon.svg"></div>
                     <div class="ourServices__item__text">
-                        <div class="title__Text">Branding
-
+                        <div class="ourServices__item__title">Branding
                         </div>
                         <div class="ourServices__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere.</div>
-
                     </div>
-
                 </div>
                 <div class="ourServices__item">
                     <div class="ourServices__item__icon"><img src="./icons/ourServicesDevelopmentIcon.svg"></div>
                     <div class="ourServices__item__text">
-                        <div class="title__Text">Development
-
+                        <div class="ourServices__item__title">Development
                         </div>
                         <div class="ourServices__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere.</div>
                     </div>
-
                 </div>
             </div><!-- ourServices__allItem -->
         </div>
@@ -216,91 +262,209 @@
 
 
     <div class="team">
-        <div class="team__title">Meet our team</div>
-        <div class="line"></div>
-        <div class="team__subtitle">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</div>
-        <div class="team__photo">
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
-            <div class="team__photo__item"></div>
+        <div class="text">
+            <div class="title__Text">Meet our team</div>
+            <div class="line"></div>
+            <div class="subtitle__Text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+            </div>
         </div>
-    </div>
 
-    <div class="pricing content">
-        <div class="title__Text"></div>
-        <div class="line"></div>
-        <div class="pricing__subtitle"></div>
-        <div class="pricing__allElements">
-            <div class="pricing__element">
-                <div class="pricing__element__titlePrice">$29</div>
-                <div class="pricing__element__subtitle">Lorem ipsum license</div>
-                <div class="greyLine"></div>
-                <div class="pricing__element__description">
-                    Lorem ipsum dolor sit amet<br>
-                    consectetur adipiscing elit<br>
-                    Ante sed interdum labortis<br>
-                    Est nisi efficitur lactus
-                </div>
-                <div class="pricing__element__footer">
-                    <div class="pricing__element__footer__title">Purchase</div>
-                    <div class="pricing__element__footer__icon"></div>
+        <div class="team__photo">
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
                 </div>
             </div>
-            <div class="pricing__element">
-                <div class="pricing__element__titlePrice">$39</div>
-                <div class="pricing__element__subtitle">Lorem ipsum license</div>
-                <div class="greyLine"></div>
-                <div class="pricing__element__description">
-                    Lorem ipsum dolor sit amet<br>
-                    consectetur adipiscing elit<br>
-                    Ante sed interdum labortis<br>
-                    Est nisi efficitur lactus
-                </div>
-                <div class="pricing__element__footer">
-                    <div class="pricing__element__footer__title">Purchase</div>
-                    <div class="pricing__element__footer__icon"></div>
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
                 </div>
             </div>
-            <div class="pricing__element">
-                <div class="pricing__element__titlePrice">$49</div>
-                <div class="pricing__element__subtitle">Lorem ipsum license</div>
-                <div class="greyLine"></div>
-                <div class="pricing__element__description">
-                    Lorem ipsum dolor sit amet<br>
-                    consectetur adipiscing elit<br>
-                    Ante sed interdum labortis<br>
-                    Est nisi efficitur lactus
-                </div>
-                <div class="pricing__element__footer">
-                    <div class="pricing__element__footer__title">Purchase</div>
-                    <div class="pricing__element__footer__icon"></div>
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
                 </div>
             </div>
-            <div class="pricing__element">
-                <div class="pricing__element__titlePrice">$109</div>
-                <div class="pricing__element__subtitle">Lorem ipsum license</div>
-                <div class="greyLine"></div>
-                <div class="pricing__element__description">
-                    Lorem ipsum dolor sit amet<br>
-                    consectetur adipiscing elit<br>
-                    Ante sed interdum labortis<br>
-                    Est nisi efficitur lactus
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
                 </div>
-                <div class="pricing__element__footer">
-                    <div class="pricing__element__footer__title">Purchase</div>
-                    <div class="pricing__element__footer__icon"></div>
+            </div>
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
+                </div>
+            </div>
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
+                </div>
+            </div>
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
+                </div>
+            </div>
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
+                </div>
+            </div>
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
+                </div>
+            </div>
+            <div class="team__photo__item">
+                <img class="team__photo__img" src="./background_image/Layer.png" alt="">
+                <div class="team__photo__content">
+                    John Doe
+                </div>
+            </div>
+        </div> <!-- team -->
+    </div><!-- team -->
+
+    <div class="pricing">
+        <div class="container">
+            <div class="text">
+                <div class="title__Text">Pricing</div>
+                <div class="line"></div>
+                <div class="subtitle__Text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
+                    scelerisque.</div>
+            </div><!-- pricing__text -->
+
+            <div class="pricing__allElements">
+                <div class="pricing__item">
+                    <div class="container__pricing">
+                        <div class="pricing__element__titlePrice">$29</div>
+                        <div class="pricing__element__subtitle">Lorem ipsum license</div>
+                        <div class="greyLine"></div>
+                        <div class="pricing__element__description">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                            Ante sed interdum labortis
+                            Est nisi efficitur lactus
+                        </div>
+                    </div>
+                    <div class="pricing__element__footer">
+                        <div class="container__pricing">
+                            <div class="pricing__element__footer__title">Purchase</div>
+                            <div class="pricing__element__footer__icon"><img src="./icons/basket.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing__item">
+                    <div class="container__pricing">
+                        <div class="pricing__element__titlePrice">$39</div>
+                        <div class="pricing__element__subtitle">Lorem ipsum license</div>
+                        <div class="greyLine"></div>
+                        <div class="pricing__element__description">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                            Ante sed interdum labortis
+                            Est nisi efficitur lactus
+                        </div>
+                    </div>
+                    <div class="pricing__element__footer">
+                        <div class="container__pricing">
+                            <div class="pricing__element__footer__title">Purchase</div>
+                            <div class="pricing__element__footer__icon"><img src="./icons/basket.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing__item">
+                    <div class="container__pricing">
+                        <div class="pricing__element__titlePrice">$49</div>
+                        <div class="pricing__element__subtitle">Lorem ipsum license</div>
+                        <div class="greyLine"></div>
+                        <div class="pricing__element__description">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                            Ante sed interdum labortis
+                            Est nisi efficitur lactus
+                        </div>
+                    </div>
+                    <div class="pricing__element__footer">
+                        <div class="container__pricing">
+                            <div class="pricing__element__footer__title">Purchase</div>
+                            <div class="pricing__element__footer__icon"><img src="./icons/basket.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing__item">
+                    <div class="container__pricing">
+                        <div class="pricing__element__titlePrice">$109</div>
+                        <div class="pricing__element__subtitle">Lorem ipsum license</div>
+                        <div class="greyLine"></div>
+                        <div class="pricing__element__description">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                            Ante sed interdum labortis
+                            Est nisi efficitur lactus
+                        </div>
+                    </div>
+                    <div class="pricing__element__footer">
+                        <div class="container__pricing">
+                            <div class="pricing__element__footer__title">Purchase</div>
+                            <div class="pricing__element__footer__icon"><img src="./icons/basket.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- pricing__allElements -->
+        </div><!-- container -->
+    </div><!-- pricing -->
+
+
+    <div class="map container">
+        <div class="map__text">
+            <div class="title__Text">Dolor sit amet</div>
+            <div class="map__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
+                sed est porttitor, ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur
+                consectetur enim id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis
+                sapien. </div>
+            <div class="btn">Learn More</div>
+        </div>
+        <div class="map__chart">
+            <img class="chart" src="./background_image/Map.png" alt="">
+        </div>
+    </div><!-- map -->
+
+    <div class="try ">
+        <div class="container">
+            <div class="try__title">
+                Try our <strong>PSD template</strong> on symu.co
+            </div>
+            <div class="btnSymu"><a class="btn">symu.co/freebies</a></div>
+        </div>
+    </div><!-- try  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    <div class="footer__icon"><img class="logo__footer" src="./icons/logo__footer.png" alt=""></div>
+                    <div class="footer__title">All Rights Reserved by Alecto</div>
+                </div>
+                <div class="footer__nav">
+                    <a href="#Home" class="nav__link">Home</a>
+                    <a href="#About" class="nav__link">About</a>
+                    <a href="#Work" class="nav__link">Work</a>
+                    <a href="#Services" class="nav__link">Services</a>
+                    <a href="#Blog" class="nav__link">Blog</a>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
+
 
 </html>
