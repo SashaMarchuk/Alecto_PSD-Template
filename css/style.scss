@@ -238,6 +238,7 @@ p {
 .aboutUs__item{
     // height: 50vh;
     @include flex-col();
+
     align-items: center;
     justify-content: space-around;
     padding: 0 20px;
@@ -387,35 +388,6 @@ p {
     justify-content: center;
     text-align: center;
 }
-.option__title{
-    font-size: 30px;
-    color: #FFFFFF;
-    @include flex-row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px 0;
-    &::before{
-        content: url(../icons/left_arrow.png);
-        cursor: pointer;
-    }
-    &::after{
-        content: url(../icons/right_arrow.png);
-        cursor: pointer;
-
-    }
-    // &::first-word{
-    //     color:red;
-    // }
-    .option__title__color{
-
-        color: #17DAA3;
-    }
-}
-.option__subtitle{
-    display: flex;
-    justify-content: center;
-}
-
 
 
 // OurServices
@@ -885,19 +857,6 @@ $media768CommonText:16px;
     .aboutUs__item__title{
         font-size: 22px;
 
-}
-.ourServices__item__text{
-    @include flex-col;
-    // .titleText{
-    //     display: flex;
-    //     // justify-items: center;
-    //     // align-self: end;
-    //     .ourServices__item__description{
-
-    //     }
-    // }
-    .ourServices__item__title{
-        font-size: 56px;
     }
     
     .option__title{
@@ -974,112 +933,6 @@ $media768CommonText:16px;
         max-width: 100%;
     }
 }
-
-/*     MEDIA 992px++*/
-@media (max-width: 992px){
-    body{
-        font-size: 17px;
-    }
-    .title__Text{
-        font-size: 48px;
-        padding-top: 50px;
-
-    }
-    .subtitle__Text{
-        padding-bottom: 35px;
-    }
-    .line{
-
-        margin: 35px 0;
-    }
-
-    .header{
-        .nav{
-            font-size: 13px;
-            .nav__link{
-                margin-left:50px;
-            }
-        }
-    }
-    .startPage__text{
-        .title__startPage{
-            font-size: 48px;
-        }
-    }
-    .aboutUs__item__title{
-        font-size: 26px;
-
-    }
-    .option__title{
-        font-size: 26px;
-    }
-    .ourServices__item__text{
-        .ourServices__item__title{
-            font-size: 48px;
-        }
-    }
-    .team__photo__item{
-        width: 25%;
-    }
-    .pricing__item{
-        max-width: 33.33333%;
-    }
-    .try__title{
-        font-size: 52px;
-    }
-    .footer__nav{
-        a{
-            padding-left: 30px;
-            
-        }
-    }
-    
-}
-/*     MEDIA 880px++*/
-@media (max-width:880px){ 
-
-    .option__title{
-        font-size: 24px;
-    }
-    .team__photo__item{
-        width: 33.3333333%;
-    }
-    .map{
-        padding: 60px 0;
-    }   
-    .map__text{
-        width: 100%;
-        padding-bottom: 30px;
-    }
-    .map__chart{
-        width:100%;
-    }
-    .try__title{
-        font-size: 48px;
-    }
-}
-
-
-/*     MEDIA 768px++*/
-@media (max-width:768px){ 
-
-    
-}
-
-/*     MEDIA 576px++*/
-@media (max-width:576px){
-
-}
-
-/*     MEDIA 441px++*/
-@media (max-width:441px){
-
-}
-
-
-
-
-
 
 
 
