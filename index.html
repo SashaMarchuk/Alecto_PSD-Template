@@ -47,7 +47,7 @@
             </g>
         </symbol>
     </svg>
-    <div class="startPage">
+    <div class="startPage"  id="startPage">
         <div class="container">
             <!-- <div class="arrow">
                 <div class="arrow__left">
@@ -57,22 +57,22 @@
                     <img src="./icons/right_arrow.png" alt="">
                 </div>
             </div> -->
-
-            <header class="header">
-                <div class="logo">
-                    <img class="logo-atr" src="icons/logo_alecto.png" alt="Alecto">
-                </div>
-                <nav class="nav">
-                    <nav class="nav">
-                        <a href="#Home" class="nav__link">Home</a>
-                        <a href="#About" class="nav__link">About</a>
-                        <a href="#Work" class="nav__link">Work</a>
-                        <a href="#Services" class="nav__link">Services</a>
-                        <a href="#Blog" class="nav__link">Blog</a>
+            <div class="container">
+                <header class="header ">
+                    <div class="logo">
+                        <img class="logo-atr" src="icons/logo_alecto.png" alt="Alecto">
+                    </div>
+                    <nav class="nav "><!-- show -->
+                        <a href="#" class="nav__link" data-scroll="#startPage">Home</a>
+                        <a href="#" class="nav__link" data-scroll="#aboutUs">About</a>
+                        <a href="#" class="nav__link" data-scroll="#photo">Work</a>
+                        <a href="#" class="nav__link" data-scroll="#ourServices">Services</a>
+                        <a href="#" class="nav__link" data-scroll="#team">Blog</a>
                         <a href="" class="nav__link"><img class="invert" src="./icons/search_icon.png" alt=""></a>
                     </nav>
-                </nav>
-            </header>
+                    <button class="burger" id="nav__toggle"><span class="burger__menu"></span></button>
+                </header>
+            </div>
             <div class="startPage__text">
                 <div class="title__startPage"><span>Alecto</span> is simple PSD Template</div>
                 <div class="arrow">
@@ -101,7 +101,7 @@
             </div>
         </div><!-- container -->
     </div><!-- startPage  -->
-    <div class="aboutUs container">
+    <div class="aboutUs heightDown container" id="aboutUs">
         <div class="text">
             <div class="title__Text">About us</div>
             <div class="line"></div>
@@ -155,7 +155,7 @@
         </div>
     </div>
 
-    <div class="photo ">
+    <div class="photo " id="photo">
         <!-- <div class="container"> -->
             <div class="photo__inner container">
                 <article class="photo__article">
@@ -191,7 +191,7 @@
     </div> <!-- photo -->
 
 
-    <div class="option">
+    <div class="option"  id="option">
         <div class="container">
             <div class="option__photo"><img src="./icons/optionPhoto1.png" alt=""></div>
             <div class="option__title">Alecto lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
@@ -206,7 +206,7 @@
         </div><!-- container -->
     </div><!-- option -->
 
-    <div class="ourServices ">
+    <div class="ourServices " id="ourServices">
         <div class="container">
             <div class="text">
                 <h1 class="title__Text">Our Services</h1>
@@ -261,7 +261,7 @@
     </div><!--  ourServices -->
 
 
-    <div class="team">
+    <div class="team"  id="team">
         <div class="text">
             <div class="title__Text">Meet our team</div>
             <div class="line"></div>
@@ -333,7 +333,7 @@
         </div> <!-- team -->
     </div><!-- team -->
 
-    <div class="pricing">
+    <div class="pricing"  id="pricing">
         <div class="container">
             <div class="text">
                 <div class="title__Text">Pricing</div>
@@ -424,7 +424,7 @@
     </div><!-- pricing -->
 
 
-    <div class="map container">
+    <div class="map container"  id="map">
         <div class="map__text">
             <div class="title__Text">Dolor sit amet</div>
             <div class="map__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
@@ -438,7 +438,7 @@
         </div>
     </div><!-- map -->
 
-    <div class="try ">
+    <div class="try "  id="try">
         <div class="container">
             <div class="try__title">
                 Try our <strong>PSD template</strong> on symu.co
@@ -446,7 +446,7 @@
             <div class="btnSymu"><a class="btn">symu.co/freebies</a></div>
         </div>
     </div><!-- try  -->
-    <footer class="footer">
+    <footer class="footer"  id="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__copyright">
